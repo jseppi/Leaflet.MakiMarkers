@@ -7,7 +7,7 @@
  *   MapBox Marker API: https://www.mapbox.com/developers/api/#Stand-alone.markers
  *
  * Usage:
- *   var marker = L.MakiMarkers.icon({icon: "rocket", color: "#b0b", size: "m"})
+ *   var icon = L.MakiMarkers.icon({icon: "rocket", color: "#b0b", size: "m"})
  *
  * License:
  *   MIT: http://jseppi.mit-license.org/
