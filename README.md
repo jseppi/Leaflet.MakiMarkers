@@ -6,7 +6,7 @@
 
 ## Usage
 
-Simply include `Leaflet.MakiMarkers.js` in your page after your `Leaflet.js` include: `<script src="Leaflet.MakiMarkers.js"></script>`
+Simply include `Leaflet.MakiMarkers.js` in your page after you include `Leaflet.js`: `<script src="Leaflet.MakiMarkers.js"></script>`
   
     //Specify a Maki icon name, hex color, and size (s, m, or l)
     //An array of icon names can be found in L.MakiMarkers.icons or at https://www.mapbox.com/maki/
