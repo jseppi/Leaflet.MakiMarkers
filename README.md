@@ -1,4 +1,19 @@
-Leaflet.MakiMarkers
-===================
+# Leaflet.MakiMarkers
 
-Leaflet plugin to create map icons using Maki Icons from MapBox.
+[Leaflet](http://www.leafletjs.com) plugin to create map icons using [Maki Icons](https://www.mapbox.com/maki/) from MapBox. Markers are retrieved from MapBox's [Static Marker API](https://www.mapbox.com/developers/api/#Stand-alone.markers).
+
+![Screenshot](https://raw.github.com/jseppi/Leaflet.MakiMarkers/master/images/screenshot.png "Screenshot of MakiMarkers")
+
+## Usage
+  
+    //Specify a Maki icon name, hex color, and size (s, m, or l)
+    //An array of icon names can be found in L.MakiMarkers.icons or at https://www.mapbox.com/maki/
+    
+    var icon = L.MakiMarkers.icon({icon: "rocket", color: "#b0b", size: "m"});
+    L.marker([30.287, -97.72], {icon: icon}).addTo(map);
+  
+[JSFiddle Demo](http://jsfiddle.net/Zhzvp/)
+
+## Thanks
+
+Thanks to [MapBox](http://www.mapbox.com) for making their Marker API available and for the Maki icon set.
