@@ -17,7 +17,7 @@ Simply include `Leaflet.MakiMarkers.js` in your page after you include `Leaflet.
 
 ## Requirements
 
-- [Leaflet]((http://www.leafletjs.com) 1.5+
+- [Leaflet]((http://www.leafletjs.com) 0.5+
 
 ## Thanks
 
