@@ -10,6 +10,7 @@ Simply include `Leaflet.MakiMarkers.js` in your page after you include `Leaflet.
   
     //Specify a Maki icon name, hex color, and size (s, m, or l)
     //An array of icon names can be found in L.MakiMarkers.icons or at https://www.mapbox.com/maki/
+    // Lowercase letters a-z and digits 0-9 can also be used.
     var icon = L.MakiMarkers.icon({icon: "rocket", color: "#b0b", size: "m"});
     L.marker([30.287, -97.72], {icon: icon}).addTo(map);
   
