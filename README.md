@@ -23,3 +23,7 @@ Simply include `Leaflet.MakiMarkers.js` in your page after you include `Leaflet.
 ## Thanks
 
 Thanks to [MapBox](http://www.mapbox.com) for making their Marker API available and for the Maki icon set.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jseppi/leaflet.makimarkers/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
