@@ -34,7 +34,7 @@
       "music", "land-use", "city", "town", "village", "farm", "bakery", "dog-park",
       "lighthouse", "clothing-store", "polling-place", "playground", "entrance",
       "heart", "london-underground", "minefield", "rail-underground", "rail-above",
-      "camera", "laundry", "car", "suitcase"],
+      "camera", "laundry", "car", "suitcase", "hairdresser", "chemist"],
     defaultColor: "#0a0",
     defaultIcon: "circle-stroked",
     defaultSize: "m",
