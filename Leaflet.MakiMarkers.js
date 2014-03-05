@@ -89,7 +89,7 @@
         options.color = options.color.substr(1);
       }
 
-      pin = "pin-" + options.size + "-" + options.icon + "+" +
+      pin = "pin-" + options.size + (L.MakiMarkers.icons.indexOf(options.icon) >= 0 ? ("-" + options.icon) : "") + "+" +
         options.color + ".png";
 
       options.iconUrl = "" + L.MakiMarkers.apiUrl + pin;
