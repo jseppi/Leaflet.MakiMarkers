@@ -30,7 +30,7 @@
         });
 
         L.marker([30.287, -97.72], {icon: rocketIcon}).addTo(map)
-            .bindPopup("<b>Medium Rocket!</b>");
+            .bindPopup("<strong>Medium Rocket!</strong>");
 
         var beerIcon = L.MakiMarkers.icon({
             icon: "beer",
@@ -39,17 +39,37 @@
         });
 
         L.marker([30.31096, -97.74277], {icon: beerIcon}).addTo(map)
-            .bindPopup("<b>Large Beer!</b>");
+            .bindPopup("<strong>Large Beer!</strong>");
 
         var warehouseIcon = L.MakiMarkers.icon({
             icon: "warehouse",
             color: "#0a0",
-            size: "s",
-            iconSize: [20, 50]
+            size: "s"
         });
 
         L.marker([30.26672, -97.74541], {icon: warehouseIcon}).addTo(map)
-            .bindPopup("<b>Small Warehouse!</b>");
+            .bindPopup("<strong>Small Warehouse!</strong>");
+
+        var noIconMarker = L.MakiMarkers.icon({
+            icon: null,
+            color: "#b00"
+        });
+
+        L.marker([30.308064585977814, -97.79387256712653], {
+            icon: noIconMarker})
+                .addTo(map)
+                .bindPopup("<strong>No Icon!</strong>");
+
+
+        var noColorMarker = L.MakiMarkers.icon({
+            icon: null,
+            color: null
+        });
+
+        L.marker([30.25173261265964, -97.69636890501715], {
+            icon: noColorMarker})
+                .addTo(map)
+                .bindPopup("<strong>No Color!</strong>");
 
     </script>
 </body>

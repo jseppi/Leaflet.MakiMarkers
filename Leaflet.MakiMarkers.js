@@ -1,4 +1,3 @@
-
 /*
  * Leaflet plugin to create map icons using Maki Icons from MapBox.
  *
@@ -12,29 +11,27 @@
  * License:
  *   MIT: http://jseppi.mit-license.org/
  */
+ /*global L:false */
 (function () {
   "use strict";
   L.MakiMarkers = {
     // Available Maki Icons
-    icons: ["circle-stroked", "circle", "square-stroked", "square",
-      "triangle-stroked", "triangle", "star-stroked", "star", "cross",
-      "marker-stroked", "marker", "religious-jewish", "religious-christian",
-      "religious-muslim", "cemetery", "rocket", "airport", "heliport", "rail",
-      "rail-metro", "rail-light", "bus", "fuel", "parking", "parking-garage",
-      "airfield", "roadblock", "ferry", "harbor", "bicycle", "park", "park2",
-      "museum", "lodging", "monument", "zoo", "garden", "campsite", "theatre",
-      "art-gallery", "pitch", "soccer", "america-football", "tennis", "basketball",
-      "baseball", "golf", "swimming", "cricket", "skiing", "school", "college",
-      "library", "post", "fire-station", "town-hall", "police", "prison",
-      "embassy", "beer", "restaurant", "cafe", "shop", "fast-food", "bar", "bank",
-      "grocery", "cinema", "pharmacy", "hospital", "danger", "industrial",
-      "warehouse", "commercial", "building", "place-of-worship", "alcohol-shop",
-      "logging", "oil-well", "slaughterhouse", "dam", "water", "wetland",
-      "disability", "telephone", "emergency-telephone", "toilets", "waste-basket",
-      "music", "land-use", "city", "town", "village", "farm", "bakery", "dog-park",
-      "lighthouse", "clothing-store", "polling-place", "playground", "entrance",
-      "heart", "london-underground", "minefield", "rail-underground", "rail-above",
-      "camera", "laundry", "car", "suitcase", "hairdresser", "chemist"],
+    icons: ["airfield","airport","alcohol-shop","america-football","art-gallery","bakery","bank","bar",
+      "baseball","basketball","beer","bicycle","building","bus","cafe","camera","campsite","car",
+      "cemetery","chemist","cinema","circle-stroked","circle","city","clothing-store","college",
+      "commercial","cricket","cross","dam","danger","disability","dog-park","embassy",
+      "emergency-telephone","entrance","farm","fast-food","ferry","fire-station","fuel","garden",
+      "golf","grocery","hairdresser","harbor","heart","heliport","hospital","industrial",
+      "land-use","laundry","library","lighthouse","lodging","logging","london-underground",
+      "marker-stroked","marker","minefield","mobilephone","monument","museum","music","oil-well",
+      "park2","park","parking-garage","parking","pharmacy","pitch","place-of-worship",
+      "playground","police","polling-place","post","prison","rail-above","rail-light",
+      "rail-metro","rail-underground","rail","religious-christian","religious-jewish",
+      "religious-muslim","restaurant","roadblock","rocket","school","scooter","shop","skiing",
+      "slaughterhouse","soccer","square-stroked","square","star-stroked","star","suitcase",
+      "swimming","telephone","tennis","theatre","toilets","town-hall","town","triangle-stroked",
+      "triangle","village","warehouse","waste-basket","water","wetland","zoo"
+    ],
     defaultColor: "#0a0",
     defaultIcon: "circle-stroked",
     defaultSize: "m",
@@ -64,7 +61,7 @@
       shadowAnchor: null,
       shadowSize: null,
       shadowUrl: null,
-      className: 'maki-marker'
+      className: "maki-marker"
     },
 
     initialize: function(options) {
@@ -85,14 +82,23 @@
           break;
       }
 
-      if (options.color.charAt(0) === '#') {
-        options.color = options.color.substr(1);
+
+      pin = "pin-" + options.size;
+
+      if (options.icon !== null) {
+        pin += "-" + options.icon;
       }
 
-      pin = "pin-" + options.size + "-" + options.icon + "+" +
-        options.color + ".png";
+      if (options.color !== null) {
+        if (options.color.charAt(0) === "#") {
+          options.color = options.color.substr(1);
+        }
 
-      options.iconUrl = "" + L.MakiMarkers.apiUrl + pin;
+        pin += "+" + options.color;
+      }
+
+      options.iconUrl = "" + L.MakiMarkers.apiUrl + pin +  ".png";
+      options.iconRetinaUrl = L.MakiMarkers.apiUrl + pin + "@2x.png";
     }
   });
 
