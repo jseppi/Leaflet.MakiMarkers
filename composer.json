@@ -1,0 +1,23 @@
+{
+  "name": "leaflet/makimarkers",
+  "description": "Leaflet plugin to create map icons using Maki Icons from MapBox.",
+  "type": "component",
+  "keywords": [
+    "leaflet",
+    "plugins",
+    "map",
+    "maki",
+    "mapbox",
+    "marker"
+  ],
+  "extra": {
+    "component": {
+      "scripts": [
+        "Leaflet.MakiMarkers.js"
+      ],
+      "files": [
+        "Leaflet.MakiMarkers.js"
+      ]
+    }
+  }
+}
