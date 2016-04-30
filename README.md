@@ -9,6 +9,9 @@
 Simply include `Leaflet.MakiMarkers.js` in your page after you include `Leaflet.js`: `<script src="Leaflet.MakiMarkers.js"></script>`
 
 ```js
+//First, specify a valid Mapbox API access token (see https://www.mapbox.com/api-documentation/?language=CLI#access-tokens)
+L.MakiMarkers.accessToken = "<YOUR_ACCESS_TOKEN>";
+
 // Specify a Maki icon name, hex color, and size (s, m, or l).
 // An array of icon names can be found in L.MakiMarkers.icons or at https://www.mapbox.com/maki/
 // Lowercase letters a-z and digits 0-9 can also be used. A value of null will result in no icon.
