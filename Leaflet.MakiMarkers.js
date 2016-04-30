@@ -3,9 +3,10 @@
  *
  * References:
  *   Maki Icons: https://www.mapbox.com/maki/
- *   MapBox Marker API: https://www.mapbox.com/developers/api/static/#markers
+ *   Mapbox Marker API: https://www.mapbox.com/api-documentation/#retrieve-a-standalone-marker
  *
  * Usage:
+ *   L.MakiMarkers.accessToken = "<YOUR_ACCESS_TOKEN>";
  *   var icon = L.MakiMarkers.icon({icon: "rocket", color: "#b0b", size: "m"});
  *
  * License:
@@ -32,6 +33,7 @@
       "swimming","telephone","tennis","theatre","toilets","town-hall","town","triangle-stroked",
       "triangle","village","warehouse","waste-basket","water","wetland","zoo"
     ],
+    accessToken: null,
     defaultColor: "#0a0",
     defaultIcon: "circle-stroked",
     defaultSize: "m",
@@ -49,8 +51,6 @@
       popupAnchor: [0,-40]
     }
   };
-
-  L.MakiMarkers.accessToken = null;
 
   L.MakiMarkers.Icon = L.Icon.extend({
     options: {
@@ -94,7 +94,6 @@
           break;
       }
 
-
       pin = "pin-" + options.size;
 
       if (options.icon !== null) {
@@ -108,8 +107,6 @@
 
         pin += "+" + options.color;
       }
-
-
 
       options.iconUrl = "" + L.MakiMarkers.apiUrl + pin +  ".png" + tokenQuery;
       options.iconRetinaUrl = L.MakiMarkers.apiUrl + pin + "@2x.png" + tokenQuery;
