@@ -22,6 +22,8 @@ var icon = L.MakiMarkers.icon({icon: "rocket", color: "#b0b", size: "m"});
 L.marker([30.287, -97.72], {icon: icon}).addTo(map);
 ```
 
+See [index.html](https://github.com/jseppi/Leaflet.MakiMarkers/blob/master/index.html) for a more complete example of how to use this plugin.
+
 ## Requirements
 
 [Leaflet](http://www.leafletjs.com) 0.5+
