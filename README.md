@@ -2,7 +2,7 @@
 
 [Leaflet](http://www.leafletjs.com) plugin to create map icons using [Maki Icons](https://www.mapbox.com/maki/) from Mapbox. Markers are retrieved from Mapbox's [Static Marker API](https://www.mapbox.com/api-documentation/#retrieve-a-standalone-marker).
 
-[![Screenshot](https://raw.github.com/jseppi/Leaflet.MakiMarkers/master/images/screenshot.png "Screenshot of MakiMarkers")]
+![Screenshot](https://raw.github.com/jseppi/Leaflet.MakiMarkers/master/images/screenshot.png "Screenshot of MakiMarkers")
 
 ## Usage
 
