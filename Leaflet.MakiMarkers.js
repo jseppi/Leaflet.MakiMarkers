@@ -4,6 +4,7 @@
  * References:
  *   Maki Icons: https://www.mapbox.com/maki/
  *   Mapbox Marker API: https://www.mapbox.com/api-documentation/#retrieve-a-standalone-marker
+ *   Possible icon names: https://raw.githubusercontent.com/mapbox/maki/master/layouts/all.json
  *
  * Usage:
  *   L.MakiMarkers.accessToken = "<YOUR_ACCESS_TOKEN>";
@@ -16,23 +17,6 @@
 (function () {
   "use strict";
   L.MakiMarkers = {
-    // Available Maki Icons
-    icons: ["airfield","airport","alcohol-shop","america-football","art-gallery","bakery","bank","bar",
-      "baseball","basketball","beer","bicycle","building","bus","cafe","camera","campsite","car",
-      "cemetery","chemist","cinema","circle-stroked","circle","city","clothing-store","college",
-      "commercial","cricket","cross","dam","danger","disability","dog-park","embassy",
-      "emergency-telephone","entrance","farm","fast-food","ferry","fire-station","fuel","garden",
-      "golf","grocery","hairdresser","harbor","heart","heliport","hospital","industrial",
-      "land-use","laundry","library","lighthouse","lodging","logging","london-underground",
-      "marker-stroked","marker","minefield","mobilephone","monument","museum","music","oil-well",
-      "park2","park","parking-garage","parking","pharmacy","pitch","place-of-worship",
-      "playground","police","polling-place","post","prison","rail-above","rail-light",
-      "rail-metro","rail-underground","rail","religious-christian","religious-jewish",
-      "religious-muslim","restaurant","roadblock","rocket","school","scooter","shop","skiing",
-      "slaughterhouse","soccer","square-stroked","square","star-stroked","star","suitcase",
-      "swimming","telephone","tennis","theatre","toilets","town-hall","town","triangle-stroked",
-      "triangle","village","warehouse","waste-basket","water","wetland","zoo"
-    ],
     accessToken: null,
     defaultColor: "#0a0",
     defaultIcon: "circle-stroked",
@@ -57,7 +41,7 @@
       //Mapbox API access token, see https://www.mapbox.com/api-documentation/?language=CLI#access-tokens
       //Instead of setting with each icon, you can set globally as L.MakiMarkers.accessToken
       accessToken: null,
-      //Maki icon: any from https://www.mapbox.com/maki/ (ref: L.MakiMarkers.icons)
+      //Maki icon: any valid name, see https://raw.githubusercontent.com/mapbox/maki/master/layouts/all.json
       icon: L.MakiMarkers.defaultIcon,
       //Marker color: short or long form hex color code
       color: L.MakiMarkers.defaultColor,

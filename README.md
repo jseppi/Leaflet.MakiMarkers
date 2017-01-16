@@ -15,7 +15,8 @@ The most recent version of Mapbox's static API (v4) requires that a valid access
 L.MakiMarkers.accessToken = "<YOUR_ACCESS_TOKEN>";
 
 // Specify a Maki icon name, hex color, and size (s, m, or l).
-// An array of icon names can be found in L.MakiMarkers.icons or at https://www.mapbox.com/maki/
+// A list of available icon names can be found at
+//   https://raw.githubusercontent.com/mapbox/maki/master/layouts/all.json
 // Lowercase letters a-z and digits 0-9 can also be used. A value of null will result in no icon.
 // Color may also be set to null, which will result in a gray marker.
 var icon = L.MakiMarkers.icon({icon: "rocket", color: "#b0b", size: "m"});
